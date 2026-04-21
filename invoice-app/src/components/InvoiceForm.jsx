@@ -20,10 +20,11 @@ const InvoiceForm = ({ isOpen, onClose, invoiceToEdit }) => {
   const [errors, setErrors] = useState({});
 
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/set-state-in-effect
     if (invoiceToEdit) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setFormData(invoiceToEdit);
     } else {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setFormData({
         ...initialFormState,
         createdAt: new Date().toISOString().split('T')[0]
