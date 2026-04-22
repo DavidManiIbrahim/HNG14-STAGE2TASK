@@ -45,7 +45,7 @@ const InvoiceList = () => {
       <div className="invoice-list">
         {filteredInvoices.length === 0 ? (
           <div className="empty-state">
-            <img src="/empty-illustration.svg" alt="No invoices" className="empty-img" />
+            <img src="/Email_campaign_Flatline 2.png" alt="No invoices" className="empty-img" />
             <h2 className="heading-m">There is nothing here</h2>
             <p className="body-1 text-secondary">
               Create an invoice by clicking the <br/>

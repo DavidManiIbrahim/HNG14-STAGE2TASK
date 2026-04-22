@@ -21,7 +21,7 @@ const Sidebar = () => {
         </button>
         <div className="divider"></div>
         <div className="avatar">
-          <img src="https://ui-avatars.com/api/?name=User&background=random" alt="User avatar" />
+          <img src="/Oval.png" alt="User avatar" />
         </div>
       </div>
     </aside>
