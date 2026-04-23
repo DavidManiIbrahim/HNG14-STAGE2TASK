@@ -7,12 +7,12 @@
   border: none;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 5px;
   cursor: pointer;
   font-weight: 700;
   font-size: 13px;
   color: var(--color-text);
-  letter-spacing: -0.1px;
+  /* letter-spacing: -0.1px; */
 }
 
 .filter-toggle:hover {

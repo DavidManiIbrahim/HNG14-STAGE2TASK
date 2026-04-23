@@ -28,12 +28,14 @@ const FilterDropdown = ({ filterStatuses, setFilterStatuses }) => {
 
   return (
     <div className="filter-dropdown" ref={dropdownRef}>
-      <button 
+       <button 
         className="filter-toggle" 
         onClick={() => setIsOpen(!isOpen)}
         aria-expanded={isOpen}
       >
-        <span className="filter-text">Filter <span className="hide-mobile">by status</span></span>
+        {/* <span className="filter-text"> */}
+          Filter <span className="hide-mobile">by status</span>
+          {/* </span> */}
         <ChevronDown 
           size={16} 
           color="#7c5dfa" 

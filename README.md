@@ -2,7 +2,7 @@
 
 A fully functional and responsive Invoice Management Application built with React and Vite. This project allows users to create, manage, and track invoices with features like filtering, status management, and a built-in light/dark mode. 
 
-## 🚀 Features and Functionalities
+##  Features and Functionalities
 
 ### 1. Invoice Management (CRUD)
 - **Create Invoices:** Open an intuitive form to fill out client details, items, and pricing.
@@ -46,12 +46,12 @@ A fully functional and responsive Invoice Management Application built with Reac
 ### 8. Data Persistence
 - Invoice data and application state are persisted using `LocalStorage` (or Context API), ensuring data is not lost upon page reload.
 
-## 🛠️ Tech Stack
+##  Tech Stack
 - **Framework:** React (Vite)
 - **Styling:** CSS / Context API for Theme Management
 - **State Management:** React Context API & LocalStorage
 
-## 📦 Setup Instructions
+##  Setup Instructions
 
 1. **Clone the repository:**
    ```bash
@@ -78,7 +78,7 @@ A fully functional and responsive Invoice Management Application built with Reac
    npm run build
    ```
 
-## 🏗️ Architecture & Component Structure
+##  Architecture & Component Structure
 - **App/Main:** Entry point wrapped with Theme and Invoice Context Providers.
 - **Pages:** 
   - `InvoiceList`: Displays the list of invoices and handles filtering.
@@ -93,7 +93,7 @@ A fully functional and responsive Invoice Management Application built with Reac
   - `InvoiceContext`: Manages the global state of invoices and CRUD operations.
   - `ThemeContext`: Manages the light/dark mode state.
 
-## ♿ Accessibility Notes
+##  Accessibility Notes
 - Proper semantic tags are used throughout the application.
 - Form fields are associated with `<label>` tags.
 - Buttons use the native `<button>` element.

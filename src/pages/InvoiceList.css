@@ -44,6 +44,9 @@
 
 .new-invoice-btn {
   padding: 6px 14px 6px 6px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  display: flex;
 }
 
 @media (min-width: 768px) {

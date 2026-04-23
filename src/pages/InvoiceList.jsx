@@ -37,7 +37,9 @@ const InvoiceList = () => {
             <div className="btn-icon">
               <Plus size={12} color="#7c5dfa" />
             </div>
-            <span>New <span className="hide-mobile">Invoice</span></span>
+            {/* <span> */}
+              New <span className="hide-mobile">Invoice</span>
+              {/* </span> */}
           </button>
         </div>
       </header>
