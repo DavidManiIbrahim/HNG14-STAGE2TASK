@@ -73,11 +73,11 @@ const InvoiceDetail = () => {
           <div className="date-section">
             <div className="date-block">
               <span className="body-m text-secondary">Invoice Date</span>
-              <h3 className="heading-s">{new Date(invoice.createdAt).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' })}</h3>
+              <h3 className="heading-xs">{new Date(invoice.createdAt).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' })}</h3>
             </div>
             <div className="date-block">
               <span className="body-m text-secondary">Payment Due</span>
-              <h3 className="heading-s">{new Date(invoice.paymentDue).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' })}</h3>
+              <h3 className="heading-xs">{new Date(invoice.paymentDue).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' })}</h3>
             </div>
           </div>
 
@@ -94,7 +94,7 @@ const InvoiceDetail = () => {
 
           <div className="sent-to-section">
             <span className="body-m text-secondary">Sent to</span>
-            <h3 className="heading-s">{invoice.clientEmail}</h3>
+            <h3 className="heading-xs">{invoice.clientEmail}</h3>
           </div>
         </div>
 
@@ -114,7 +114,7 @@ const InvoiceDetail = () => {
                   <td className="text-bold body-m">{item.name}</td>
                   <td className="text-center text-bold body-m text-secondary">{item.quantity}</td>
                   <td className="text-right text-bold body-m text-secondary">£{item.price.toFixed(2)}</td>
-                  <td className="text-right text-bold body-m">£{item.total.toFixed(2)}</td>
+                  <td className="text-right text-bold body-m item-total-cell">£{item.total.toFixed(2)}</td>
                 </tr>
               ))}
             </tbody>

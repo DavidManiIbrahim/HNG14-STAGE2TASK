@@ -65,6 +65,7 @@ h1, h2, h3, h4, h5, h6 {
 .heading-l, h1 { font-size: 32px; letter-spacing: -1px; }
 .heading-m, h2 { font-size: 24px; letter-spacing: -0.75px; }
 .heading-s, h3 { font-size: 20px; letter-spacing: -0.63px; }
+.heading-xs { font-size: 15px; letter-spacing: -0.31px; font-weight: 700; }
 h4 { font-size: 16px; letter-spacing: -0.8px; }
 h5 { font-size: 13px; letter-spacing: -0.5px; }
 h6 { font-size: 11px; letter-spacing: -0.25px; }
@@ -142,8 +143,8 @@ h6 { font-size: 11px; letter-spacing: -0.25px; }
 }
 
 .btn-secondary {
-  background-color: #373b53;
-  color: #888eb0;
+  background-color: #f9fafe;
+  color: #7e88c3;
 }
 
 .dark .btn-secondary {
@@ -152,7 +153,7 @@ h6 { font-size: 11px; letter-spacing: -0.25px; }
 }
 
 .btn-secondary:hover {
-  background-color: #0c0e16;
+  background-color: #dfe3fa;
 }
 
 .dark .btn-secondary:hover {

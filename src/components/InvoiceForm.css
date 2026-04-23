@@ -312,6 +312,17 @@ input[type="number"] {
   }
 }
 
+.item-total-value {
+  color: #7e88c3;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 16px 0;
+}
+
+.dark .item-total-value {
+  color: #ffffff;
+}
+
 .section-title {
   color: var(--color-primary);
   font-size: 16px;

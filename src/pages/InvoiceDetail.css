@@ -77,6 +77,7 @@
   border-radius: 8px;
   padding: 24px;
   box-shadow: 0 10px 10px -10px rgba(72, 84, 159, 0.1);
+  margin-bottom: 24px;
 }
 
 @media (min-width: 768px) {
@@ -89,30 +90,35 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {
   .detail-top {
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 20px;
   }
   .detail-sender-address {
     text-align: right;
   }
 }
 
+.detail-id-desc p {
+  color: #7E88C3;
+}
+
 .detail-middle {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  margin-bottom: 40px;
+  gap: 32px;
+  margin-bottom: 48px;
 }
 
 @media (min-width: 768px) {
   .detail-middle {
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 100px;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    gap: 20px;
   }
 }
 
@@ -120,6 +126,35 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
+}
+
+.date-block span, 
+.bill-to-section span, 
+.sent-to-section span {
+  display: block;
+  margin-bottom: 12px;
+  white-space: nowrap;
+  color: #7E88C3 !important;
+  font-weight: 500;
+}
+
+.bill-to-section h3 {
+  margin-bottom: 12px;
+}
+
+.sent-to-section h3 {
+  word-break: break-all;
+}
+
+.detail-sender-address,
+.bill-to-section .body-s {
+  color: #7E88C3 !important;
+  line-height: 1.8;
+}
+
+.detail-sender-address p,
+.bill-to-section .body-s p {
+  margin-bottom: 4px;
 }
 
 .detail-items {
@@ -150,21 +185,34 @@
 
 .items-table th {
   padding: 32px 32px 16px 32px;
+  color: #7E88C3 !important;
+  font-weight: 500;
 }
 
 .items-table td {
   padding: 16px 32px;
+  color: var(--color-text);
+  font-weight: 700;
+}
+
+.items-table td.text-secondary {
+  color: #7E88C3 !important;
+}
+
+.dark .items-table td.text-secondary {
+  color: #dfe3fa !important;
+}
+
+.item-total-cell {
+  color: var(--color-text) !important;
+}
+
+.dark .item-total-cell {
+  color: #ffffff !important;
 }
 
 .items-table tbody tr:last-child td {
   padding-bottom: 32px;
-}
-
-.items-mobile-list {
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
 }
 
 .detail-total {
@@ -178,6 +226,23 @@
 
 .dark .detail-total {
   background-color: #0c0e16;
+}
+
+.detail-total h2 {
+  font-size: 24px;
+}
+
+.hash {
+  color: #7e88c3;
+}
+
+.dark .detail-id-desc p,
+.dark .detail-sender-address,
+.dark .bill-to-section .body-s,
+.dark .date-block span,
+.dark .bill-to-section span,
+.dark .sent-to-section span {
+  color: #dfe3fa !important;
 }
 
 .text-left { text-align: left; }

@@ -132,6 +132,11 @@
 .invoice-total {
   grid-column: 1;
   grid-row: 3;
+  color: var(--color-text);
+}
+
+.dark .invoice-total {
+  color: #ffffff;
 }
 
 .invoice-status {
