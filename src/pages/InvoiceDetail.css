@@ -40,6 +40,7 @@
     padding: 24px 32px;
     margin-bottom: 24px;
   }
+
 }
 
 .status-section {
@@ -68,8 +69,21 @@
 @media (min-width: 768px) {
   .action-buttons .btn {
     padding: 16px 24px;
+    
   }
 }
+
+   .action-buttons,
+  .hide-mobile{
+display: none;
+  }
+
+  @media (min-width: 768px) {
+      .action-buttons,
+  .hide-mobile{
+display: flex;
+  }
+  }
 
 .mobile-only {
   position: fixed;
@@ -90,6 +104,8 @@
   .mobile-only {
     display: none;
   }
+
+  
 }
 
 /* Detail Body */
