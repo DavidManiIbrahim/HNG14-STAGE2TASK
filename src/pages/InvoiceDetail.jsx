@@ -46,13 +46,13 @@ const InvoiceDetail = () => {
           <StatusBadge status={invoice.status} />
         </div>
         
-        <div className="action-buttons hide-mobile">
+        {/* <div className="action-buttons hide-mobile">
           <button className="btn btn-secondary" onClick={() => setIsEditFormOpen(true)}>Edit</button>
           <button className="btn btn-danger" onClick={() => setIsDeleteModalOpen(true)}>Delete</button>
           {invoice.status !== 'Paid' && (
             <button className="btn btn-primary" onClick={() => markAsPaid(id)}>Mark as Paid</button>
           )}
-        </div>
+        </div> */}
       </header>
 
       <main className="detail-body">
@@ -131,7 +131,7 @@ const InvoiceDetail = () => {
             ))}
           </div>
           <div className="detail-total">
-            <span className="body-s text-white">Amount Due</span>
+            <span className="body-s text-white">Grand Total</span>
             <h2 className="heading-m text-white">£{invoice.total.toFixed(2)}</h2>
           </div>
         </div>
