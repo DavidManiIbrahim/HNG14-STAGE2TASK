@@ -1,10 +1,14 @@
 .sidebar {
-  background-color: var(--color-surface);
+  background-color: #373b53;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 50;
+  z-index: 1100;
   transition: background-color 0.3s ease;
+}
+
+.dark .sidebar {
+  background-color: #1e2139;
 }
 
 .sidebar-logo {

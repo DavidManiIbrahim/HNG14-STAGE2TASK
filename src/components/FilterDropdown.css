@@ -10,8 +10,13 @@
   gap: 12px;
   cursor: pointer;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 13px;
   color: var(--color-text);
+  letter-spacing: -0.1px;
+}
+
+.filter-toggle:hover {
+  color: var(--color-text-secondary);
 }
 
 .hide-mobile {
@@ -86,6 +91,7 @@
 
 .option-label {
   font-weight: 700;
-  font-size: 15px;
+  font-size: 13px;
   color: var(--color-text);
+  letter-spacing: -0.1px;
 }

@@ -35,14 +35,14 @@ const InvoiceDetail = () => {
 
   return (
     <div className="invoice-detail-page animate-fade-in">
-      <Link to="/" className="back-link body-1 text-bold">
+      <Link to="/" className="back-link body-m text-bold">
         <ChevronLeft size={16} color="#7c5dfa" />
         Go back
       </Link>
 
       <header className="detail-header">
         <div className="status-section">
-          <span className="body-1 text-secondary">Status</span>
+          <span className="body-m text-secondary">Status</span>
           <StatusBadge status={invoice.status} />
         </div>
         
@@ -59,9 +59,9 @@ const InvoiceDetail = () => {
         <div className="detail-top">
           <div className="detail-id-desc">
             <h2 className="heading-s"><span className="hash">#</span>{invoice.id}</h2>
-            <p className="body-1 text-secondary">{invoice.description}</p>
+            <p className="body-m text-secondary">{invoice.description}</p>
           </div>
-          <div className="detail-sender-address body-1 text-secondary">
+          <div className="detail-sender-address body-s text-secondary">
             <p>{invoice.senderAddress?.street}</p>
             <p>{invoice.senderAddress?.city}</p>
             <p>{invoice.senderAddress?.postCode}</p>
@@ -72,19 +72,19 @@ const InvoiceDetail = () => {
         <div className="detail-middle">
           <div className="date-section">
             <div className="date-block">
-              <span className="body-1 text-secondary">Invoice Date</span>
+              <span className="body-m text-secondary">Invoice Date</span>
               <h3 className="heading-s">{new Date(invoice.createdAt).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' })}</h3>
             </div>
             <div className="date-block">
-              <span className="body-1 text-secondary">Payment Due</span>
+              <span className="body-m text-secondary">Payment Due</span>
               <h3 className="heading-s">{new Date(invoice.paymentDue).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' })}</h3>
             </div>
           </div>
 
           <div className="bill-to-section">
-            <span className="body-1 text-secondary">Bill To</span>
+            <span className="body-m text-secondary">Bill To</span>
             <h3 className="heading-s">{invoice.clientName}</h3>
-            <div className="body-1 text-secondary">
+            <div className="body-s text-secondary">
               <p>{invoice.clientAddress?.street}</p>
               <p>{invoice.clientAddress?.city}</p>
               <p>{invoice.clientAddress?.postCode}</p>
@@ -93,7 +93,7 @@ const InvoiceDetail = () => {
           </div>
 
           <div className="sent-to-section">
-            <span className="body-1 text-secondary">Sent to</span>
+            <span className="body-m text-secondary">Sent to</span>
             <h3 className="heading-s">{invoice.clientEmail}</h3>
           </div>
         </div>
@@ -102,19 +102,19 @@ const InvoiceDetail = () => {
           <table className="items-table">
             <thead>
               <tr>
-                <th className="body-1 text-secondary text-left">Item Name</th>
-                <th className="body-1 text-secondary text-center">QTY.</th>
-                <th className="body-1 text-secondary text-right">Price</th>
-                <th className="body-1 text-secondary text-right">Total</th>
+                <th className="body-s text-secondary text-left">Item Name</th>
+                <th className="body-s text-secondary text-center">QTY.</th>
+                <th className="body-s text-secondary text-right">Price</th>
+                <th className="body-s text-secondary text-right">Total</th>
               </tr>
             </thead>
             <tbody>
               {invoice.items?.map((item, index) => (
                 <tr key={index}>
-                  <td className="text-bold">{item.name}</td>
-                  <td className="text-center text-bold text-secondary">{item.quantity}</td>
-                  <td className="text-right text-bold text-secondary">£{item.price.toFixed(2)}</td>
-                  <td className="text-right text-bold">£{item.total.toFixed(2)}</td>
+                  <td className="text-bold body-m">{item.name}</td>
+                  <td className="text-center text-bold body-m text-secondary">{item.quantity}</td>
+                  <td className="text-right text-bold body-m text-secondary">£{item.price.toFixed(2)}</td>
+                  <td className="text-right text-bold body-m">£{item.total.toFixed(2)}</td>
                 </tr>
               ))}
             </tbody>
@@ -123,15 +123,15 @@ const InvoiceDetail = () => {
             {invoice.items?.map((item, index) => (
               <div key={index} className="mobile-item">
                 <div className="mobile-item-left">
-                  <span className="text-bold">{item.name}</span>
-                  <span className="text-bold text-secondary">{item.quantity} x £{item.price.toFixed(2)}</span>
+                  <span className="text-bold body-m">{item.name}</span>
+                  <span className="text-bold body-m text-secondary">{item.quantity} x £{item.price.toFixed(2)}</span>
                 </div>
-                <div className="mobile-item-right text-bold">£{item.total.toFixed(2)}</div>
+                <div className="mobile-item-right text-bold body-m">£{item.total.toFixed(2)}</div>
               </div>
             ))}
           </div>
           <div className="detail-total">
-            <span className="body-1 text-white">Amount Due</span>
+            <span className="body-s text-white">Amount Due</span>
             <h2 className="heading-m text-white">£{invoice.total.toFixed(2)}</h2>
           </div>
         </div>

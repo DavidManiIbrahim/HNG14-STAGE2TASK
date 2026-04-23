@@ -21,7 +21,7 @@ const InvoiceList = () => {
       <header className="page-header">
         <div className="header-text">
           <h1 className="heading-l">Invoices</h1>
-          <p className="body-1 text-secondary">
+          <p className="body-m text-secondary">
             {invoices.length === 0 
               ? 'No invoices' 
               : `There are ${filteredInvoices.length} total invoices`}
@@ -47,7 +47,7 @@ const InvoiceList = () => {
           <div className="empty-state">
             <img src="/Email_campaign_Flatline 2.png" alt="No invoices" className="empty-img" />
             <h2 className="heading-m">There is nothing here</h2>
-            <p className="body-1 text-secondary">
+            <p className="body-m text-secondary">
               Create an invoice by clicking the <br/>
               <span className="text-bold">New Invoice</span> button and get started
             </p>
